@@ -7,5 +7,5 @@ data= data(indices,:);
 
 trData = [] ; teData = [];
 nTr = round(m*0.7);
-trDate = data(1:nTr,:);
+trData = data(1:nTr,:);
 teData = data(nTr+1:m,:);
