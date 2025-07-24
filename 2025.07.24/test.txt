@@ -1,0 +1,3 @@
+>> data = load('iris.txt');
+>> [trData,teData] = splitData(data);
+>> [Train,Test] = scaleData(trData,teData);
