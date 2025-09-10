@@ -41,7 +41,9 @@ tbl_clean.Cylinders = categorical(tbl_clean.Cylinders);
 cyl_encoded = dummyvar(tbl_clean.Cylinders);
 disp(cyl_encoded(1:5,:))
 
+%Feature selection (Correlation with target MPG)
 corrVals = corr(tbl_clean{:,{'Horsepower','Weight','Acceleration'}},tbl_clean.MPG,'Rows','complete');
 
 disp('Correlation of feature with MPG:');
 disp(array2table(corrVals,'VariableNames',{'Correlation'},'RowNames',{'Horsepower','Weight','Acceleration'}));
+
